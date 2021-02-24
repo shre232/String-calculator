@@ -2,7 +2,13 @@
 public class stringCalculator {
 
     String[] num= {};
-    public  int Add(String numbers) {
+    public  int Add(String numbers) throws Exception {{
+
+
+        for(int i=0;i< num.length;i++)
+            if (Integer.parseInt(String.valueOf(i)) < 0) {
+                throw new Exception("Negative Input");
+            }}
         if (numbers.isEmpty()) {
             return 0;
         }
