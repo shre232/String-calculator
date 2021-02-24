@@ -27,16 +27,18 @@ class testCalculate {
         Assertions.assertEquals(stringcalculator.Add( "1\n2"),3);
     }
 //    @Test
-//    public void supporting_different_delimiters(){
-//        Assertions.assertEquals(stringcalculator.Add("//;\n1;2"),3);
-
-
-    @Test
-    public void negative_number_return_exeption() throws Exception {
+//    public void supporting_different_delimiters()throws Exception{
+//        Assertions.assertEquals (stringcalculator.Add("//;\n1;2"),3);
+//}
+@Test
+        public void negative_number_return_exeption() throws Exception {
        stringcalculator.Add("-1");
     }
 
 public void numbers_greater_than_1000()throws Exception {
     Assertions.assertEquals(stringcalculator.Add("2,2,1000"),4);
-
+   }
+    @Test    public void getAddCalledCount() throws Exception {
+        stringcalculator.Add("1,3");
+        Assertions.assertEquals(stringcalculator.count(),1);
 }}
