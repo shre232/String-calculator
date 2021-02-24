@@ -8,8 +8,11 @@ public class stringCalculator {
         if (numbers.length() == 1) {
             return Integer.parseInt(numbers);
         } else {
-            return Integer.parseInt(num[0]) + Integer.parseInt(num[1]);
-
+            int sum=0;
+            for (int i=0;i<num.length;i++){
+                sum+=Integer.parseInt(num[i]);
+            }
+            return sum;
 
         }
     }}

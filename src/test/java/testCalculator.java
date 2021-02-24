@@ -14,4 +14,14 @@ class testCalculate {
     @Test
     public void sum_of_two_numbers() {
         Assertions.assertEquals(stringCalculator.Add("1,2"), 3);
-    }}
+    }
+    @Test
+    public void sum_of_unknown_numbers() {
+        Assertions.assertEquals(stringCalculator.Add("1,2,3"), 6);
+    }
+
+
+
+
+
+}
