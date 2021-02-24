@@ -34,8 +34,9 @@ class testCalculate {
     @Test
     public void negative_number_return_exeption() throws Exception {
        stringcalculator.Add("-1");
-    }}
+    }
 
+public void numbers_greater_than_1000()throws Exception {
+    Assertions.assertEquals(stringcalculator.Add("2,2,1000"),4);
 
-
-
+}}

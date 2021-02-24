@@ -2,13 +2,16 @@
 public class stringCalculator {
 
     String[] num= {};
-    public  int Add(String numbers) throws Exception {{
+    public int Add(String numbers) throws Exception {{
 
 
         for(int i=0;i< num.length;i++)
             if (Integer.parseInt(String.valueOf(i)) < 0) {
-                throw new Exception("Negative Input");
-            }}
+                throw new Exception("Negative Input");}
+            else if (Integer.parseInt(String.valueOf(i))<1000){
+                continue;
+            }
+
         if (numbers.isEmpty()) {
             return 0;
         }
@@ -25,17 +28,17 @@ public class stringCalculator {
 
 
             if (numbers.length() == 1) {
-                return Integer.parseInt(numbers);}
-              else{  int sum = 0;
+                return Integer.parseInt(numbers);
+            }
+              else {
+                int sum = 0;
                 for (int i = 0; i < num.length; i++) {
+
+
 
                     sum += Integer.parseInt(num[i]);
                 }
+
                 return sum;
             }
-
-
-
-
-
-        }}
+            }   }}
