@@ -19,6 +19,10 @@ class testCalculate {
     public void sum_of_unknown_numbers() {
         Assertions.assertEquals(stringCalculator.Add("1,2,3"), 6);
     }
+    @Test
+    public void sum_of_two_with_newline_delimeter_numbers(){
+        Assertions.assertEquals(stringCalculator.Add( "1\n2"),3);
+    }
 
 
 

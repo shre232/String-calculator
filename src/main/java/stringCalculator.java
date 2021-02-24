@@ -1,7 +1,7 @@
 public class stringCalculator {
 
     public static int Add(String numbers) {
-        String[] num = numbers.split(",");
+        String[] num = numbers.split(",|\n");
         if (numbers.isEmpty()) {
             return 0;
         }
