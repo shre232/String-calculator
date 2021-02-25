@@ -40,5 +40,12 @@ public void numbers_greater_than_1000()throws Exception {
 
     @Test    public void getAddCalledCount() throws Exception {
         stringcalculator.Add("1,3");
-        Assertions.assertEquals(stringcalculator.count(),1);
-}}
+        Assertions.assertEquals(stringcalculator.Count(),1);
+}
+@Test
+public void delimiterCanBeAnyLength() throws Exception {
+Assertions.assertEquals(stringcalculator.Add("//[***]\n1***2***3"),6);
+        }
+
+
+}
